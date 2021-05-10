@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Review Page</title>
+</head>
+
+<body>
+    <h1>Leave a review</h1>
+    <form action="" method="get">
+        <p>
+            <label for="name">Your Name</label>
+            <input id="name" name="name">
+        </p>
+        <p>
+            <label for="comment">Comment</label>
+            <input id="comment" name="comment">
+        </p>
+        <p>
+            <label for="rating">Rating</label>
+            <ul>
+                <li>
+                    <input type="radio" id="five" name="five" value="5">
+                    <label for="five">5 (best) - </label>
+                </li>
+                <li>
+                    <input type="radio" id="four" name="four" value="4">
+                    <label for="four">4 - </label>
+                </li>
+                <li>
+                    <input type="radio" id="three" name="three" value="3">
+                    <label for="three">3 - </label>
+                </li>
+                <li>
+                    <input type="radio" id="two" name="two" value="2">
+                    <label for="two">2 - </label>
+                </li>
+                <li>
+                    <input type="radio" id="one" name="one" value="1">
+                    <label for="one">1 (worst)</label>
+                </li>
+            </ul>
+        </p>
+        <input type="submit">
+        <a href="/">Never mind</a>
+    </form>
+</body>
+
+</html>
