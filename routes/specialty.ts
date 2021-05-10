@@ -8,8 +8,8 @@ const specialPizzas = [
     { name: "Dessert Pizza", price: 14.00 }
 ];
 
-routes.get('/specialty-pizzas', (req, res) => {
-    const name = req.query.name;
+routes.get('/specialty', (req, res) => {
+    const name = req.query.name as string;
     const price = req.query.price;
     res.render("specialty-pizzas", { name, price });
 });

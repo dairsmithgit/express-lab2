@@ -1,7 +1,7 @@
 import path from 'path';
 import express from 'express';
-import home from './routes/home';
-import specialty from './routes/specialty';
+import homeRoutes from './routes/home';
+import specialtyRoutes from './routes/specialty';
 
 const app = express();
 
@@ -10,8 +10,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use("/", home);
-app.use("/specialty-pizzas", specialty);
+app.use("/", homeRoutes);
+app.use("/specialty", specialtyRoutes);
 
 const port = 3000;
 app.listen(port, () => console.log(`Listening on port: ${port}.`));
