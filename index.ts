@@ -1,6 +1,7 @@
 import path from 'path';
 import express from 'express';
 import home from './routes/home';
+import speciality from './routes/speciality';
 
 const app = express();
 
@@ -10,6 +11,7 @@ app.set('view engine', 'hbs');
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/", home);
+app.use("/speciality", speciality);
 
 const port = 3000;
 app.listen(port, () => console.log(`Listening on port: ${port}.`));
