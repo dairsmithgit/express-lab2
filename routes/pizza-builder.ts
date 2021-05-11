@@ -18,3 +18,5 @@ routes.get('/pizza-builder', (req, res) => {
     const topping = toppings;
     res.render("pizza-builder", { topping });
 });
+
+export default routes;
