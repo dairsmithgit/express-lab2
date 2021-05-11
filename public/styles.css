@@ -1,0 +1,25 @@
+body {
+    background-color: blanchedalmond;
+}
+
+h1, h2 {
+    font-family: 'Gill Sans', sans-serif;
+}
+
+h1 {
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+p, li, a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    color: blue;
+}
