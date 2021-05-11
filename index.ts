@@ -2,6 +2,7 @@ import path from 'path';
 import express from 'express';
 import homeRoutes from './routes/home';
 import specialtyRoutes from './routes/specialty';
+import reviewRoutes from './routes/review';
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use("/", homeRoutes);
 app.use("/specialty", specialtyRoutes);
+app.use("/review", reviewRoutes);
 
 const port = 3000;
 app.listen(port, () => console.log(`Listening on port: ${port}.`));
