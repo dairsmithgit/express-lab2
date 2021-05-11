@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/styles.css">
     <title>Pizza Builder</title>
 </head>
+
 <body>
     <h1>Build your own pizza</h1>
     <form action="" method="get">
@@ -22,6 +24,11 @@
             <label for="toppings">How many toppings?</label>
             <input type="number" name="toppings" id="toppings">
         </p>
+        <ul>
+            {{#each toppings}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
         <p>
             <input type="checkbox" name="gluten" id="gluten">
             <label for="gluten">Gluten-free Crust? ($2.00 extra)</label>
@@ -36,4 +43,5 @@
         </p>
     </form>
 </body>
+
 </html>
